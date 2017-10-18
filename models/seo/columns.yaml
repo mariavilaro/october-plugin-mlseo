@@ -1,0 +1,18 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+    page:
+        label: fw.seo::lang.seo.page
+        invisible: true
+    pagetitle:
+        label: fw.seo::lang.seo.page
+        valueFrom: page_title
+        sortable: false
+    title:
+        label: fw.seo::lang.seo.title
+    description:
+        label: fw.seo::lang.seo.description
+    keywords:
+        label: fw.seo::lang.seo.keywords

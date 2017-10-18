@@ -1,0 +1,2 @@
+# Multilanguage SEO plugin
+

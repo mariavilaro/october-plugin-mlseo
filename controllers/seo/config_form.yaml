@@ -1,0 +1,18 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+form: ~/plugins/fw/seo/models/seo/fields.yaml
+modelClass: Fw\Seo\Models\Seo
+defaultRedirect: fw/seo/seo
+
+create:
+  title: backend::lang.form.create_title
+  redirect: fw/seo/seo/update/:id
+  redirectClose: fw/seo/seo/
+  flashSave: backend::lang.form.create_success
+
+update:
+  title: backend::lang.form.update_title
+  redirectClose: fw/seo/seo
+  flashSave: backend::lang.form.update_success

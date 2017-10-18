@@ -1,0 +1,28 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+    page:
+        label: fw.seo::lang.seo.page
+        type: dropdown
+        span: left
+    title:
+        label: fw.seo::lang.seo.title
+        span: left
+        attributes:
+            maxlength: 70
+    description:
+        label: fw.seo::lang.seo.description
+        span: left
+        attributes:
+            maxlength: 155
+    keywords:
+        label: fw.seo::lang.seo.keywords
+        span: left
+        attributes:
+            maxlength: 255
+    image:
+        label: fw.seo::lang.seo.image
+        type: fileupload
+        mode: image
