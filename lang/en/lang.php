@@ -3,8 +3,7 @@
 return [
     'plugin' => [
         'name' => 'SEO',
-        'title' => 'SEO',
-        'description' => 'Manage SEO',
+        'description' => 'Multilanguage basic SEO',
         'manage' => 'Manage SEO',
     ],
     'component_seo' => [

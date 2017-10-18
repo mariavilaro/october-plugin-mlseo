@@ -29,7 +29,8 @@ class Seo extends Model
 
     public $translatable = [
     	'title',
-    	'description'
+    	'description',
+        'keywords'
     ];
 
     public $attachOne = [
@@ -54,7 +55,7 @@ class Seo extends Model
         }*/
 
         return $cmsPages;
-    
+
 
     }
 

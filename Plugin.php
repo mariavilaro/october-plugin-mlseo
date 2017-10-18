@@ -6,7 +6,17 @@ use Backend;
 
 class Plugin extends PluginBase
 {
-	public function pluginDetails()
+    /**
+     * @var array Plugin dependencies
+     */
+    public $require = ['RainLab.Translate'];
+
+    /**
+     * Returns information about this plugin.
+     *
+     * @return array
+     */
+    public function pluginDetails()
 	{
 		return [
 			'name'			=> 'fw.seo::lang.plugin.name',
@@ -37,7 +47,7 @@ class Plugin extends PluginBase
     {
         return [
             'seo' => [
-                'label'       => 'fw.seo::lang.plugin.title',
+                'label'       => 'fw.seo::lang.plugin.name',
                 'description' => 'fw.seo::lang.plugin.description',
                 'icon'        => 'icon-line-chart',
                 'url'         => Backend::url('fw/seo/seo'),

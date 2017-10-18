@@ -9,7 +9,7 @@ list: ~/plugins/fw/seo/models/seo/columns.yaml
 modelClass: Fw\seo\Models\Seo
 
 # List Title
-title: fw.seo::lang.seo.title_component
+title: fw.seo::lang.component_seo.name
 
 # Link URL for each record
 recordUrl: fw/seo/seo/update/:id
