@@ -1,5 +1,5 @@
 {
-    "name": "fw/mlseo",
+    "name": "fw/seo",
     "type": "october-plugin",
     "description": "Multilanguage SEO plugin for October CMS",
     "keywords": ["october", "octobercms", "seo", "translate"],

@@ -22,7 +22,7 @@ Finally, show the metas in your layout like this:
 
 <meta property="og:title" content="{{ this.page.title }}" />
 <meta property="og:description" content="{{ this.page.description }}" />
-{% if this.page.seo_image %>
+{% if this.page.seo_image %}
 <meta property="og:image" content="{{ this.page.seo_image.getPath() }}" />
-<% endif %>
+{% endif %}
 ```
