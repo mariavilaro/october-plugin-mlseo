@@ -30,8 +30,7 @@ class Seo extends ComponentBase
 		$seo = SeoModel::where('page', $this->page->baseFileName)->first();
 		if ($seo) {
 			$this->page->title = $seo->title . ($this->property('append') ? (' ' . $this->property('append')) : '');
-			$this->page->description = $seo->description;
-            $this->page->keywords = $seo->keywords;
+			$this->page->description = $seo->description;            
 			$this->page->seo_image = $seo->image;
 		}
 	}
