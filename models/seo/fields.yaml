@@ -17,11 +17,6 @@ fields:
         span: left
         attributes:
             maxlength: 155
-    keywords:
-        label: fw.seo::lang.seo.keywords
-        span: left
-        attributes:
-            maxlength: 255
     image:
         label: fw.seo::lang.seo.image
         type: fileupload
