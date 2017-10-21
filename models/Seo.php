@@ -10,7 +10,7 @@ class Seo extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
-    public $implement = ['RainLab.Translate.Behaviors.TranslatableModel'];
+    public $implement = ['@RainLab.Translate.Behaviors.TranslatableModel'];
 
     /**
      * @var string The database table used by the model.
@@ -23,14 +23,12 @@ class Seo extends Model
     public $rules = [
         'page' => 'required|unique:fw_seo_pages',
         'title' => 'required|max:70',
-        'description' => 'required|max:155',
-        'keywords' => 'required|max:255',
+        'description' => 'required|max:155'
     ];
 
     public $translatable = [
     	'title',
-    	'description',
-        'keywords'
+    	'description'
     ];
 
     public $attachOne = [
