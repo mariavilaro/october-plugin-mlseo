@@ -14,5 +14,3 @@ columns:
         label: fw.seo::lang.seo.title
     description:
         label: fw.seo::lang.seo.description
-    keywords:
-        label: fw.seo::lang.seo.keywords
