@@ -21,7 +21,6 @@ return [
         'page' => 'Página',
         'title' => 'Título',
         'description' => 'Descripción',
-        'keywords' => 'Palabras clave (separadas con ,)',
         'image' => 'Imagen para redes sociales'
     ],
 ];
