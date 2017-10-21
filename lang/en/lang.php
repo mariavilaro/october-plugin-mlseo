@@ -20,7 +20,6 @@ return [
         'page' => 'Page',
         'title' => 'Title',
         'description' => 'Description',
-        'keywords' => 'Keywords (separated with a ,)',
         'image' => 'Social Networks Image'
     ],
 ];
