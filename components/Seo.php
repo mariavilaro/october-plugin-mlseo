@@ -6,7 +6,10 @@ use \RainLab\Translate\Classes\Translator;
 
 class Seo extends ComponentBase
 {
-	public function componentDetails()
+    // Boolean which reflects whether or not the current page has an SEO page
+    protected $hasSeo = false;
+
+    public function componentDetails()
 	{
 		return [
 			'name'			=> 'fw.seo::lang.component_seo.name',
@@ -25,15 +28,25 @@ class Seo extends ComponentBase
         ];
     }
 
-	public function onRun()
-	{
-		$seo = SeoModel::where('page', $this->page->baseFileName)->first();
-		if ($seo) {
-			$this->page->title = $seo->title . ($this->property('append') ? (' ' . $this->property('append')) : '');
-			$this->page->description = $seo->description;
+    public function onRun()
+    {
+        $seo = SeoModel::where('page', $this->page->baseFileName)->first();
+
+        if ($seo) {
+            $this->hasSeo = true;
+            $this->page->title = $seo->title . ($this->property('append') ? (' ' . $this->property('append')) : '');
+            $this->page->description = $seo->description;
             $this->page->keywords = $seo->keywords;
-			$this->page->seo_image = $seo->image;
-		}
-	}
+            $this->page->seo_image = $seo->image;
+        }
+    }
+
+    /**
+     * Returns true if the current page has an SEO page defined, false otherwise
+     */
+    public function hasSeoPage()
+    {
+        return $this->hasSeo;
+    }
 
 }

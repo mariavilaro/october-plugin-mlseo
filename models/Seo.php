@@ -24,7 +24,7 @@ class Seo extends Model
         'page' => 'required|unique:fw_seo_pages',
         'title' => 'required|max:70',
         'description' => 'required|max:155',
-        'keywords' => 'required|max:255',
+        'keywords' => 'max:255',
     ];
 
     public $translatable = [
