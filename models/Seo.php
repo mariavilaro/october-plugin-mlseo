@@ -54,6 +54,7 @@ class Seo extends Model
 
         if(!is_null($keyValue)){
             $seopage = $this->where('page',$keyValue)->first();
+            $seopage->baseFileName = $seopage->page;
             $pages->prepend($seopage);
         }
         
