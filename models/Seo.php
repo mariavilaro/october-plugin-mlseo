@@ -44,6 +44,19 @@ class Seo extends Model
         $theme = Theme::getActiveTheme();
 
         $pages = Page::listInTheme($theme, true);
+        
+        $withseo = $this->lists('page');
+
+        $pages = $pages->filter(function($value) use($withseo) {
+            return ! in_array(strtolower($value->title), $withseo);
+
+        });
+
+        if(!is_null($keyValue)){
+            $seopage = $this->where('page',$keyValue)->first();
+            $pages->prepend($seopage);
+        }
+        
         $cmsPages = [];
         foreach ($pages as $page) {
             $cmsPages[$page->baseFileName] = $page->title;
