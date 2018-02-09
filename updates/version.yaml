@@ -5,3 +5,5 @@
     - create_pages_table.php
 1.0.3:
     - Component default, keywords are optional
+1.0.4:
+    - Fix permissions bug
