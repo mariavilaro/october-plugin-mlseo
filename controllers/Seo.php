@@ -13,7 +13,7 @@ class Seo extends \Backend\Classes\Controller {
     public $listConfig = 'config_list.yaml';
     public $formConfig = 'config_form.yaml';
 
-    public $requiredPermissions = ['fw.seo.manage_content.*'];
+    public $requiredPermissions = ['fw.seo.manage'];
 
 	public function __construct()
 	{
