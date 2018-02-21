@@ -7,3 +7,5 @@
     - Component default, keywords are optional
 1.0.4:
     - Fix permissions bug
+1.0.5:
+    - Allow to use meta_title and meta_description fields in layout (compatible with Page metas and JKShop)

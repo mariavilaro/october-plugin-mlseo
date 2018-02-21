@@ -34,10 +34,17 @@ class Seo extends ComponentBase
 
         if ($seo) {
             $this->hasSeo = true;
-            $this->page->title = $seo->title . ($this->property('append') ? (' ' . $this->property('append')) : '');
-            $this->page->description = $seo->description;
-            $this->page->keywords = $seo->keywords;
+            $this->page->meta_title = $this->page->title = $seo->title . ($this->property('append') ? (' ' . $this->property('append')) : '');
+            $this->page->meta_description = $this->page->description = $seo->description;
+            $this->page->meta_keywords = $this->page->keywords = $seo->keywords;
             $this->page->seo_image = $seo->image;
+        } else {
+            //TODO: if the SEO component is in the layout, and after it, in the page, there's another component (for example jkshop product detail)
+            //it would be interesting to be able to add the 'append' property after the meta_title that the component sets.
+            //Is it possible in October to run a component onRun method the last of all the components?
+            if ($this->page->meta_title && $this->property('append')) {
+                $this->page->meta_title = $this->page->title = $this->page->meta_title . ($this->property('append') ? (' ' . $this->property('append')) : '');
+            }
         }
     }
 
