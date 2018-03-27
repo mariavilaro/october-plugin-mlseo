@@ -15,6 +15,10 @@ return [
             'description' => 'Anexar al título de la página (ej. | NombreSitio)',
         ],
     ],
+    'component_canonical_url' => [
+        'name' => 'URL Canónica',
+        'description' => 'Construye la URL canónica.',
+    ],
     'seo' => [
         'update_title' => 'Actualizar SEO',
         'create_title' => 'Crear SEO para página',

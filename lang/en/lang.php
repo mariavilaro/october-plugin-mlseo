@@ -14,6 +14,10 @@ return [
             'description' => 'Append to the page title (ej. | SiteName)',
         ],
     ],
+    'component_canonical_url' => [
+        'name' => 'Canonical URL',
+        'description' => 'Build the canonical URL.',
+    ],
     'seo' => [
         'update_title' => 'Update SEO',
         'create_title' => 'Create SEO Page',
