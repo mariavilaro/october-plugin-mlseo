@@ -22,6 +22,7 @@ return [
         'title' => 'Título',
         'description' => 'Descripción',
         'keywords' => 'Palabras clave (separadas con ,)',
-        'image' => 'Imagen para redes sociales'
+        'image' => 'Imagen para redes sociales',
+        'export' => 'Exportar a .csv',
     ],
 ];

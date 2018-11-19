@@ -1,0 +1,9 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+export:
+    title: fw.seo::lang.seo.export
+    modelClass: Fw\Seo\Models\SeoExport
+    list: $/fw/seo/models/seoexport/columns.yaml
+    redirect: fw/seo/seo

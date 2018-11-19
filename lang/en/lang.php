@@ -21,6 +21,7 @@ return [
         'title' => 'Title',
         'description' => 'Description',
         'keywords' => 'Keywords (separated with a ,)',
-        'image' => 'Social Networks Image'
+        'image' => 'Social Networks Image',
+        'export' => 'Export to .csv',
     ],
 ];

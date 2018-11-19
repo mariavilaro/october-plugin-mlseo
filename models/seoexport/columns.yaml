@@ -1,0 +1,15 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+    locale:
+        label: locale
+    type:
+        label: type
+    page:
+        label: reference
+    title:
+        label: title
+    description:
+        label: description
