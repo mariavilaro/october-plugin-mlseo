@@ -9,3 +9,5 @@
     - Fix permissions bug
 1.0.5:
     - Allow to use meta_title and meta_description fields in layout (compatible with Page metas and JKShop)
+1.0.6
+    - Export
