@@ -17,21 +17,22 @@ class Plugin extends PluginBase
      * @return array
      */
     public function pluginDetails()
-	{
-		return [
-			'name'			=> 'fw.seo::lang.plugin.name',
-			'description'	=> 'fw.seo::lang.plugin.description',
-			'author'		=> 'Maria Vilaró',
-			'icon'			=> 'icon-line-chart'
-		];
-	}
+    {
+        return [
+            'name'        => 'fw.seo::lang.plugin.name',
+            'description' => 'fw.seo::lang.plugin.description',
+            'author'      => 'Maria Vilaró',
+            'icon'        => 'icon-line-chart'
+        ];
+    }
 
-	public function registerComponents()
-	{
-		return [
-			'\Fw\Seo\Components\Seo' => 'seo',
-    	];
-	}
+    public function registerComponents()
+    {
+        return [
+            '\Fw\Seo\Components\Seo' => 'seo',
+            '\Fw\Seo\Components\CanonicalUrl' => 'canonicalUrl',
+        ];
+    }
 
     public function registerPermissions()
     {
@@ -56,5 +57,4 @@ class Plugin extends PluginBase
             ]
         ];
     }
-
 }

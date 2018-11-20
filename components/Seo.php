@@ -10,12 +10,12 @@ class Seo extends ComponentBase
     protected $hasSeo = false;
 
     public function componentDetails()
-	{
-		return [
-			'name'			=> 'fw.seo::lang.component_seo.name',
-			'description'	=> 'fw.seo::lang.component_seo.description'
-		];
-	}
+    {
+        return [
+            'name' => 'fw.seo::lang.component_seo.name',
+            'description' => 'fw.seo::lang.component_seo.description'
+        ];
+    }
 
     public function defineProperties()
     {
@@ -55,5 +55,4 @@ class Seo extends ComponentBase
     {
         return $this->hasSeo;
     }
-
 }
