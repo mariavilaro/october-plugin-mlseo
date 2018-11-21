@@ -13,3 +13,7 @@ columns:
         label: title
     description:
         label: description
+    keywords:
+        label: keywords
+    image_file:
+        label: image

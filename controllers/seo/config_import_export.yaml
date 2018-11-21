@@ -7,3 +7,4 @@ export:
     modelClass: Fw\Seo\Models\SeoExport
     list: $/fw/seo/models/seoexport/columns.yaml
     redirect: fw/seo/seo
+    fileName: 'seo.csv'

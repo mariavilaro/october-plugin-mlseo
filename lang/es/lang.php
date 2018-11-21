@@ -23,6 +23,6 @@ return [
         'description' => 'Descripción',
         'keywords' => 'Palabras clave (separadas con ,)',
         'image' => 'Imagen para redes sociales',
-        'export' => 'Exportar a .csv',
+        'export' => 'Exportar',
     ],
 ];
